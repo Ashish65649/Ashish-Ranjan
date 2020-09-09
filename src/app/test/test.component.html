@@ -1,0 +1,29 @@
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<div class="row mt-4">
+
+    <div class="col md-2">
+      <div class="card">
+        <div class="card-header">
+            <div class="text-center" style="margin-bottom: -7px;">
+              <h1 style="font-weight: 500;">{{this.article.votes}}</h1>
+            </div>
+            <div class="level text-center" style="font-weight: bold;">
+              POINTS
+            </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-10">
+      <div class="row">
+        <a href="{{this.article.link}}" style="font-size: 25px;font-weight: normal;">{{this.article.title}}</a>
+      </div>
+      <div class="row mt-4">
+        <h6 (click)="this.voteUp()" style="color: #0000EE;cursor: pointer;"><i class="fa fa-arrow-up"></i>&nbsp;Upvote</h6>&nbsp;&nbsp;&nbsp;
+        <h6 (click)="this.voteDown()" style="color: #0000EE;cursor: pointer;"><i class="fa fa-arrow-down"></i>&nbsp;Downvote</h6>
+      </div>
+    </div>
+
+</div>
+
